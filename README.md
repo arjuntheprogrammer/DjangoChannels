@@ -40,3 +40,11 @@ Channel layer provides the following abstractions:
 * When a user posts a message, a JavaScript function will transmit the message over WebSocket to a ChatConsumer. The ChatConsumer will receive that message and forward it to the group corresponding to the room name. Every ChatConsumer in the same group (and thus in the same room) will then receive the message from the group and forward it over WebSocket back to JavaScript, where it will be appended to the chat log.
 
 ---
+
+## Tutorial Part 3: Rewrite Chat Server as Asynchronous
+
+* Rewrite the consumer to be asynchronous
+  * Synchronous consumers are convenient because they can call regular synchronous I/O functions such as those that access Django models without writing special code.
+  * Asynchronous consumers can provide a higher level of performance since they don’t need to create additional threads when handling requests.
+
+---
