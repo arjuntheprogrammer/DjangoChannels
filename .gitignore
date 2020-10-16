@@ -1,0 +1,4 @@
+db.sqlite3
+.vscode/settings.json
+*/__pycache__/*
+migrations
