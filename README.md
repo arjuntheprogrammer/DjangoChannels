@@ -48,3 +48,26 @@ Channel layer provides the following abstractions:
   * Asynchronous consumers can provide a higher level of performance since they don’t need to create additional threads when handling requests.
 
 ---
+
+## Tutorial Part 4: Automated Testing
+
+### Testing the views
+
+These tests will ensure that:
+
+* when a chat message is posted then it is seen by everyone in the same room
+* when a chat message is posted then it is not seen by anyone in a different room
+
+Setup
+
+* Install the Chrome web browser, if you do not already have it.
+* Install chromedriver.
+  * brew cask install chromedriver
+* Install Selenium. Run the following command:
+  * python3 -m pip install selenium
+
+TO RUN TESTS:
+
+* python3 manage.py test chat.tests
+
+---
